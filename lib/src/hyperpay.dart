@@ -73,7 +73,7 @@ class HyperpayPlugin {
       );
 
       if (response.statusCode != 200) {
-        throw HttpException('${response.statusCode}: ${response.body}');
+        throw HttpException('his vehicle is already booked');
       }
 
       final Map _resBody = json.decode(response.body);
